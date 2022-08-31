@@ -1,11 +1,11 @@
-# my-vite-template
-Quick Vite Starter Template
+# Vite Starter Template
+> Quick Vite Starter Template
 
 ```bash
 degit uchihamalolan/vite
 ```
 
-# Tech Stack
+## Tech Stack
 
 ### Main
 - Vite - React - TS
