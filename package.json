@@ -19,6 +19,7 @@
     "@unocss/preset-uno": "^0.45.13",
     "@unocss/vite": "^0.45.13",
     "typescript": "^4.6.4",
-    "vite": "^3.0.7"
+    "vite": "^3.0.7",
+    "vite-tsconfig-paths": "^3.5.0"
   }
 }
