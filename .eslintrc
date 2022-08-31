@@ -1,0 +1,38 @@
+{
+	"ignorePatterns": ["!src", "!server"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:jsx-a11y/recommended",
+		"prettier"
+	],
+	"overrides": [
+		{
+			"files": ["**/*.ts?(x)"],
+			"parser": "@typescript-eslint/parser",
+			"extends": ["plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
+			"plugins": ["@typescript-eslint"],
+			"rules": {
+				"@typescript-eslint/explicit-module-boundary-types": "off",
+				"@typescript-eslint/ban-ts-comment": "off",
+				"@typescript-eslint/no-empty-interface": "off",
+				"@typescript-eslint/no-unused-vars": [
+					"error",
+					{ "varsIgnorePattern": "React", "argsIgnorePattern": "_" }
+				]
+			}
+		}
+	],
+	"rules": {
+		"jsx-a11y/click-events-have-key-events": "off",
+		"jsx-a11y/no-static-element-interactions": "off",
+		"react/prop-types": "off"
+	},
+	"settings": {
+		"import/parsers": { "@typescript-eslint/parser": [".ts", ".tsx"] },
+		"import/resolver": { "typescript": {} },
+		"react": { "version": "detect" }
+	}
+}
