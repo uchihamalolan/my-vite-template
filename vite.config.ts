@@ -7,11 +7,11 @@ import presetIcons from '@unocss/preset-icons';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tsconfigPaths(),
-    Unocss({
-      presets: [presetUno(), presetIcons()],
-    }),
-  ],
+	plugins: [
+		react(),
+		tsconfigPaths(),
+		Unocss({
+			presets: [presetUno(), presetIcons()],
+		}),
+	],
 });
